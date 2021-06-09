@@ -96,5 +96,4 @@ function clean(){
     document.getElementById("screen-result-anterior").value = ""
     document.getElementById("screen-result").value = ""
     document.getElementById("screen-show-operation").value = ""
-
 }
