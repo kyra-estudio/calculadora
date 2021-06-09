@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-body">
+        <div class="content-calculator">
+            <div class="oculto">
+                <input type="text" placeholder="0" disabled id="screen-result-anterior">
+                <input type="text" placeholder="0" disabled id="screen-operacion">
+            </div>
+            <div class="screen">
+                <input type="text" placeholder="0" disabled id="screen-show-operation">                
+                <input type="text" placeholder="0" disabled id="screen-result">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-number" id="7" type="button" value="7" onclick="anadirNumeroDisplay('7','screen-result')">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-number" id="8" type="button" value="8" onclick="anadirNumeroDisplay('8','screen-result')">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-number" id="9" type="button" value="9" onclick="anadirNumeroDisplay('9','screen-result')">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-oper" id="sumar" type="button" value="+" onclick="sumar()">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-number" id="4" type="button" value="4" onclick="anadirNumeroDisplay('4','screen-result')">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-number" id="5" type="button" value="5" onclick="anadirNumeroDisplay('5','screen-result')">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-number" id="6" type="button" value="6" onclick="anadirNumeroDisplay('6','screen-result')">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-oper" id="restar" type="button" value="-" onclick="restar()">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-number" id="1" type="button" value="1" onclick="anadirNumeroDisplay('1','screen-result')">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-number" id="2" type="button" value="2" onclick="anadirNumeroDisplay('2','screen-result')">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-number" id="3" type="button" value="3" onclick="anadirNumeroDisplay('3','screen-result')">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-oper" id="mult" type="button" value="*" onclick="mult()">
+            </div>            
+            <div class="btn-cal btn-cal-radius btn-clean">
+                <input name="btn-clean" id="clean" type="button" value="C" class="clean" onclick="clean()">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-number" id="0" type="button" value="0" onclick="anadirNumeroDisplay('0','screen-result')">
+            </div>          
+            <div class="btn-cal btn-cal-radius btn-equal">
+                <input name=btn-equal id="result" type="button" value="=" class="equal" onclick="result()">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input name="btn-oper" id="div" type="button" value="/" onclick="div()">
+            </div>
+
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

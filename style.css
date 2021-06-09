@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content-body{
+    background-color: gainsboro;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-calculator{
+    width: 400px;
+    height: 450px;
+    background-color: rgb(197, 37, 125);
+    border-radius: 10px;
+    box-shadow: 2px 1px 29px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 85px;
+    gap: 20px;
+}
+#screen-show-operation{
+    color: rgb(88, 86, 86);
+    font-size: 20px;
+}
+
+.screen{
+    background-color: rgb(151, 150, 150);
+    border-radius: 10px;
+    color: rgb(255, 6, 130);
+    padding: 15px;
+    grid-column: 1/5;
+}
+
+.oculto{
+    display: none;
+}
+
+.screen > input{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    outline: inherit;
+    font-size: 40px;
+    width: 100%;
+}
+.btn-cal{
+    background-color: rgb(177, 177, 250);
+}
+.btn-cal-radius{
+    border-radius: 10px;
+}
+.btn-cal > input{
+    border: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    color: magenta;
+    font-size: 35px;
+    background-color: rgb(98, 199, 233)
+}
+.btn-cal > .equal{
+    background-color: rgb(122, 218, 197);
+}
+.btn-cal > .clean{
+    background-color: rgb(207, 171, 240);
+}
+.btn-cal :hover{
+    transition-duration: 0.4s;
+    background-color: rgb(43, 46, 219);
+    color: mintcream;
+}
+.btn-clean :hover{
+    transition-duration: 0.4s;
+    background-color: rgb(142, 114, 168);
+    color: mintcream;
+}
+.btn-equal :hover{
+    transition-duration: 0.4s;
+    background-color: rgb(56, 143, 124);
+    color: mintcream;
+}
